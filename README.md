@@ -19,20 +19,20 @@ Users have profiles containing their information and uploaded videos.
 
 ## Installation
 #### Clone the repository:
-git clone https://github.com/your_username/streamify.git
+  git clone https://github.com/your_username/streamify.git
 #### Navigate into the project directory:
-cd streamify
+  cd streamify
 #### Install dependencies:
-pip install -r requirements.txt
+  pip install -r requirements.txt
 #### Set up database migrations:
-python manage.py makemigrations
+  python manage.py makemigrations
 
-python manage.py migrate
+  python manage.py migrate
 #### Create a superuser:
-python manage.py createsuperuser
+  python manage.py createsuperuser
 #### Start the development server:
-python manage.py runserver
+  python manage.py runserver
 #### Access the application:
-http://localhost:8000.
+  http://localhost:8000
 
 
