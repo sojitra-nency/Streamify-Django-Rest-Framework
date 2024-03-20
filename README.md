@@ -34,5 +34,45 @@ Users have profiles containing their information and uploaded videos.
   python manage.py runserver
 #### Access the application:
   http://localhost:8000
+  
+## API Endpoints
+#### Authentication:
+POST /stream/register/: Sign up a new user.
 
+POST /stream/login/: Sign in an existing user.
+
+POST /stream/change-password/: Change user password.
+
+POST /stream/send-password-reset-mail/: Send password reset mail.
+
+POST /stream/password-reset/<uid>/<token>/: Reset password.
+
+#### User
+
+GET /stream/profile/: List all User Profile.
+
+#### Videos:
+
+POST /stream/create-videos/: Create a new video.
+
+PUT /stream/video-detail/<pk>/: Update a specific video.
+
+GET /stream/video-detail/<pk>/: Retrieve a specific video.
+
+DELETE /stream/video-detail/<pk>/: Delete a specific video.
+
+GET /stream/list/: Retrieve all videos.
+
+GET /stream/list/?page=<page_number>/: Pagination applied to list of all videos
+
+
+#### Comments:
+
+GET /stream/comments/<int:video_id>/: Retrieve comments for a specific video.
+
+POST /stream/comments/<int:video_id>/: Post a comment on a specific video.
+
+#### Search:
+
+GET /stream/search/?query={search_query}: Search videos based on title and description.
 
