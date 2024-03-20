@@ -16,3 +16,23 @@ Users can view and post comments on specific videos.
 Enables users to search for videos based on title and description.
 #### User Profile: 
 Users have profiles containing their information and uploaded videos.
+
+## Installation
+#### Clone the repository:
+git clone https://github.com/your_username/streamify.git
+#### Navigate into the project directory:
+cd streamify
+#### Install dependencies:
+pip install -r requirements.txt
+#### Set up database migrations:
+python manage.py makemigrations
+
+python manage.py migrate
+#### Create a superuser:
+python manage.py createsuperuser
+#### Start the development server:
+python manage.py runserver
+#### Access the application:
+http://localhost:8000.
+
+
