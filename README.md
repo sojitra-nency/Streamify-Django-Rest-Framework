@@ -45,7 +45,7 @@ POST /stream/change-password/: Change user password.
 
 POST /stream/send-password-reset-mail/: Send password reset mail.
 
-POST /stream/password-reset/int:<<uid>>/int:<<token>>/: Reset password.
+POST /stream/password-reset/<int:uid>/<int:token>/: Reset password.
 
 ### User:
 
@@ -55,11 +55,11 @@ GET /stream/profile/: List all User Profile.
 
 POST /stream/create-videos/: Create a new video.
 
-PUT /stream/video-detail/<pk>/: Update a specific video.
+PUT /stream/video-detail/<int:pk>/: Update a specific video.
 
-GET /stream/video-detail/<pk>/: Retrieve a specific video.
+GET /stream/video-detail/<int:pk>/: Retrieve a specific video.
 
-DELETE /stream/video-detail/<pk>/: Delete a specific video.
+DELETE /stream/video-detail/<int:pk>/: Delete a specific video.
 
 GET /stream/list/: Retrieve all videos.
 
