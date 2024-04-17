@@ -19,7 +19,7 @@ Users have profiles containing their information and uploaded videos.
 
 ## Installation
 ### Clone the repository:
-  git clone https://github.com/your_username/streamify.git
+  git clone [https://github.com/your_username/streamify.git](https://github.com/sojitra-nency/Streamify-Django-Rest-Framework.git)
 ### Navigate into the project directory:
   cd streamify
 ### Install dependencies:
