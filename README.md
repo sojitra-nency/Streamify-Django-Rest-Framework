@@ -45,7 +45,7 @@ POST /stream/change-password/: Change user password.
 
 POST /stream/send-password-reset-mail/: Send password reset mail.
 
-POST /stream/password-reset/<uid>/<token>/: Reset password.
+POST /stream/password-reset/ <uid> / <token> /: Reset password.
 
 ### User:
 
